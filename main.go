@@ -36,11 +36,11 @@ func main() {
 		}
 
 		fmt.Print("Would you like to convert another temperature ? (y/n) ")
-		fmt.Scanln(&shouldConvertAgain)
-		_, err := fmt.Println(shouldConvertAgain)
-		if err != nil {
-			printError(errReadingInput)
-		}
+		// fmt.Scanln(&shouldConvertAgain)
+		// _, err := fmt.Println(shouldConvertAgain)
+		// if err != nil {
+		// 	printError(errReadingInput)
+		// }
 		if strings.ToUpper(strings.TrimSpace(shouldConvertAgain)) != "Y" {
 			fmt.Println("Good bye!")
 			break
